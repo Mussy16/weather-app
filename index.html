@@ -1,12 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><i>weather-app</i></title>
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container-app">
+      <div class="inner">
+        <div class="menu">
+          <input class="input"
+            type="search"
+            name="text"
+            placeholder="Enter city name..."
+            spellcheck="true"
+          />
+          <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+            <div class="section1">
+                <img src="/images/sun_869869.png" />
+                <p class="temp"> 7°C</p>
+                <p class="city">Harare</p>
+              </div>
+              <div class="section2">
+                <div class="left">
+                  <span>
+                    <img src="/images/humidity_5538873.png" />
+                    <p class="humidity track">45%</p>
+                  </span>
+                  <p class="desc">Humidity</p>
+                </div>
+                <div class="right">
+                  <img src="/images/wind_2011448.png" />
+                  <p class="wind-speed track">45 km/h</p>
+                  <p class="desc">Wind Speed</p>
+                </div>
+        </div>
+        <button class="clear">Clear</button>
+      </div>
+    </div>
+    <script src="/javascript/main.js"></script>
+  </body>
 </html>

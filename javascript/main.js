@@ -1,12 +1,11 @@
 
 
-class Students{
-    constructor(name,surname,student_id){
-        this.name =name;
-        this.surname = surname;
-        this .student_id = student_id;
-    }
-}
+const InputValue = document.querySelector(".input");
+const  Btn = document.querySelector(".search");
+const Temp = document.querySelector(".temp");
+const Humidity = document.querySelector(".humidity");
+const Speed = document.querySelector(".wind-speed");
 
-const newStudent = new Students("Tafadzwa","Musinachirevo",34);
-console.log(newStudent);
+Btn.addEventListener("click",()=>{
+    console.log("HUGHVJHDVJD")
+})

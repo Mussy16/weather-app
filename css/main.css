@@ -3,4 +3,142 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.2);
+}
+
+:root{
+  --backgroundcolor:cyan;
+  
+}
+.container-app{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+.container-app .inner{
+    max-width:(500px, 90%);
+    margin: 100px auto;
+    aspect-ratio:1.5/ 0.8;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    border-radius: 0.45rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    opacity: 0.80;
+    z-index: -1;
+    padding: 1rem 2rem;
+    position: relative;
+}
+.inner .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0;
+}
+.menu input{
+    width: 90%;
+    height:50px;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.menu button{
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-left: 15px;
+    border: none;
+}
+.menu button i{
+    font-size: 0.8rem;
+    color: brown;
+}
+.menu button:hover{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    transition: 0.50s ease-in-out;
+    color: white;
+
+}
+.section1{
+    margin-top: 6px;
+    padding: 0;
+}
+.section1 .city{
+    font-size: 3.4rem;
+    color: white;
+    font-weight: 700;
+    padding: 0;
+    margin-top: 6px !important;
+}
+.section1 .temp{
+    font-size: 3.4rem;
+    color: white;
+    font-weight: 700; 
+    margin: 6px 0;
+    padding: 0;
+}
+.section2{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.section2 .desc{
+  color: white;
+}
+img{
+    width: 85px;
+    z-index: 3;
+}
+.inner .clear{
+    position: absolute;
+    padding: 0.7rem 2.4rem;
+    bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color:#0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-size: 1.1rem;
+    
+}
+.inner .clear:hover{
+    background-color:#FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    transition: 0.50s ease-out;
+    font-size: 1rem;
+}
+.track{
+    
+    border-radius: 50%;
+    border: 4px solid rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+    border-right-color:rgb(245,239,239) ;
+    border-left-color:#08AEEA;
+    animation: anime-loading 2s linear infinite;
+    
+}
+@keyframes anime-loading{
+    0%{
+       background-color: white;
+    }
+
+    100%{
+        background-color: aqua;
+     }
 }
